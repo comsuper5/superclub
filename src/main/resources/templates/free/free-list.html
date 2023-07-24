@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로JET 동아리</title>
+    <link rel="stylesheet" href="free-list.css" />
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="./assets/Vector 1.svg" alt="Logo" />
+        <img src="./assets/Logo.svg" alt="Logo" />
+    </div>
+    <nav class="top-menu">
+        <ul>
+            <li class="top-menu__select">Board;</li>
+            <li class="top-menu__common" id="top-menu__notice">Notice;</li>
+            <li class="top-menu__common" id="top-menu__logout">Log_Out;</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="board">
+        <h1>Board;</h1>
+    </div>
+    <div class="board-menu">
+        <div>No.</div>
+        <div>제목</div>
+        <div>작성일자</div>
+        <div>글쓴이</div>
+    </div>
+    <!-- 게시글 목록을 감싸는 요소 추가 -->
+    <div class="board-list-container">
+        <!-- 게시글 목록이 동적으로 생성될 요소 추가 -->
+        <div class="board-list" id="board-list"></div>
+    </div>
+</main>
+
+<footer>
+    <div></div>
+    <div class="pagination">
+        <a href="#" class="page-link">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+        <a href="#" class="page-link">4</a>
+        <a href="#" class="page-link">5</a>
+    </div>
+    <div>
+        <button class="write-button">글쓰기</button>
+    </div>
+</footer>
+<script src="index.js"></script>
+<script src="notice-list.js"></script>
+<script src="free-list.js"></script>
+</body>
+</html>

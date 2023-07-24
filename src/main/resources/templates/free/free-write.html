@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="free-write.css" />
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="./assets/Vector 1.svg" alt="Logo" />
+        <img src="./assets/Logo.svg" alt="Logo" />
+    </div>
+    <nav class="top-menu">
+        <ul>
+            <li class="top-menu__select">Board;</li>
+            <li class="top-menu__common" id="top-menu__notice">Notice;</li>
+            <li class="top-menu__common" id="top-menu__logout">Log_Out;</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Board_Write;</h1>
+    <div class="form-group">
+        <div class="title">
+            <label for="title">제목</label>
+            <button id="submit-button">등록</button>
+        </div>
+        <input type="text" id="title" name="title" required />
+    </div>
+    <div class="form-group2">
+        <div class="content">
+            <label for="content">내용</label>
+            <input type="file" id="image" name="image" />
+        </div>
+        <textarea id="content" name="content" rows="20" required></textarea>
+        <div class="image-preview">
+            <img id="preview-image" />
+        </div>
+</main>
+<script src="notice-list.js"></script>
+<script src="index.js"></script>
+<script src="free-write.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>.COMSUPER5;</title>
+    <link rel="stylesheet" href="css\up-bar.css" />
+    <link rel="stylesheet" href="css\notice-page.css" />
+</head>
+
+<!-- 헤더영역-->
+<body>
+<header>
+    <div class="up-bar" alt="">
+        <button class="bar-btn up-bar-logo">
+            <img src="assets/up-bar-logo.svg" alt="" />
+        </button>
+        <div class="up-bar-menu" alt="">
+            <button class="bar-btn up-bar-menu-board">
+                <img src="assets/up-bar-menu-board.svg" alt="" />
+            </button>
+            <div class="up-bar-boundary-value" alt="">
+                <img src="assets/up-bar-boundary-value.svg" />
+            </div>
+            <button class="bar-btn up-bar-menu-notice">
+                <img src="assets/up-bar-menu-notice.svg" alt="" />
+            </button>
+            <div class="up-bar-boundary-value" alt="">
+                <img src="assets/up-bar-boundary-value.svg" />
+            </div>
+            <button class="bar-btn up-bar-menu-logout">
+                <img src="assets/up-bar-menu-logout.svg" alt="" />
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- 메인부분 시작 -->
+<main>
+    <div class="notice">
+        <h1>Notice;</h1>
+    </div>
+    <div class="notice-page">
+        <div class="notice-page-element">제목:</div>
+        <span>제목입니다</span>
+    </div>
+    <div class="notice-page">
+        <div class="notice-page-element">작성일자 :</div>
+        <span>2023-07-22</span>
+    </div>
+    <div class="notice-page">
+        <div class="notice-page-element">글쓴이 :</div>
+        <span>김나박이</span>
+    </div>
+    <div class="notice-page-text">
+        <div>내용물을 입력했습니다.</div>
+    </div>
+    <!-- 유저 확인영역 -->
+    <div class="cofirm-identity">
+        <input type="text" name="name " value="이름" />
+        <input type="password" name="passwrod" value="비밀번호" />
+        <button class="notice-confirm">확인</button>
+    </div>
+
+    <!-- 수정 내용 입력 영역 -->
+    <div class="notice-modify-text-write" alt="">
+        <input
+                type="text"
+                name="notice-modify-text-write"
+                value="수정 내용을 입력해주세요."
+        />
+    </div>
+</main>
+
+<footer>
+    <div class="notice-modify-btn__list">
+        <button class="notice-modify-btn">목록</button>
+        <button class="notice-modify-btn">수정</button>
+        <button class="notice-modify-btn">삭제</button>
+        <button class="notice-modify-btn">글쓰기</button>
+    </div>
+</footer>
+</body>
+</html>

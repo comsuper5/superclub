@@ -1,0 +1,121 @@
+/* 기본 스타일 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Noto Sans KR;
+}
+
+/* 헤더 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(16px);
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Noto Sans KR;
+}
+
+.logo img {
+    max-height: 50px;
+    cursor: pointer;
+}
+
+.top-menu ul {
+    list-style: none;
+}
+
+.top-menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-menu li:last-child {
+    margin-right: 0;
+}
+
+.top-menu__select {
+    color: #9440ff;
+    cursor: pointer;
+}
+
+.top-menu__common {
+    color: white;
+    cursor: pointer;
+}
+
+/* 메인 게시판 */
+main {
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column; /* 각 게시글을 세로 방향으로 배치 */
+}
+
+.board {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.board-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(151, 151, 151, 0.2);
+    padding: 10px 30px 10px 20px;
+    margin: 10px 20px 0px 20px;
+}
+
+.board-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* 각 요소들을 동일한 간격으로 배치 */
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+    padding: 10px 20px 20px 20px;
+}
+
+/* 하단 부분 */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px 20px 10px 20px;
+    clear: left;
+}
+
+.pagination {
+    padding: 10px 20px;
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+.page-link {
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* 버튼 */
+.write-button {
+    padding: 10px 20px;
+
+    background-color: gray;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.write-button:hover {
+    background-color: #9440ff;
+}
