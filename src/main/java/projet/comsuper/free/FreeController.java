@@ -10,4 +10,9 @@ public class FreeController {
     public String freeWrite() {
         return "free/free-write";
     }
+
+    @GetMapping("/freelist")
+    public String freeList() {
+        return "free/free-list";
+    }
 }

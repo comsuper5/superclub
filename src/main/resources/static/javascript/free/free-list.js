@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // 글쓰기 버튼 클릭 이벤트 리스너
     writeButton.addEventListener("click", function () {
         // 글쓰기 페이지로 이동
-        window.location.href = "free-write.html";
+        window.location.href = "/notice/free-write.html";
     });
 
     // 로컬스토리지에서 저장된 게시글 데이터 가져오기
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // 제목을 클릭했을 때 해당 게시글의 인덱스를 URL 파라미터로 전달하여 free-description.html로 이동
         postTitle.addEventListener("click", function () {
-            window.location.href = `free-description.html?index=${index}`;
+            window.location.href = `/free/free-description.html?index=${index}`;
         });
 
         const postDate = document.createElement("div");

@@ -10,4 +10,9 @@ public class NoticeController {
     public String noticeWrite() {
         return "notice/notice-write";
     }
+
+    @GetMapping("/noticelist")
+    public String noticeList() {
+        return "notice/notice-list";
+    }
 }
